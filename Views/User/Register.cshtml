@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>Register</h1>
+
+@model User
+
+<form action="../User/DisplayUser" method="post" class="form-check-inline">
+
+
+    <input type="text" name="UserName" value="@Model.UserName" required/>
+    <input type="text" name="Email" value="@Model.Email" required/>
+    <input type="text" name="Password" value="@Model.Password" required />
+    <input type="submit" name="Submit" value="Submit" />
+
+</form>
+
